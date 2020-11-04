@@ -1,3 +1,5 @@
+### SRC - This is a good effort and works well
+### you do need to add some #endif lines.
 from random import randint
 
 #list of choices for computer to choose from
