@@ -66,7 +66,7 @@ class player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.x = 300
         self.rect.y = 460
-        self.speed = 1
+        self.speed = 10
     #stops the sprite going off the edge of the screen
     def update(self):
         if self.rect.x > 630:
@@ -154,9 +154,9 @@ def gameLoop(lives, score):
                         bullet_count = bullet_count
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT]:
-            my_player.moveLeft(2)
+            my_player.moveLeft(20)
         if keys[pygame.K_RIGHT]:
-            my_player.moveRight(2)
+            my_player.moveRight(20)
                        
         # Game logic goes after this comment
         all_sprites_group.update()
