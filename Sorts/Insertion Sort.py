@@ -3,9 +3,10 @@ import time
 start_time = time.time()
 value = 0
 numbers = []
-for i in range(1000):
+for i in range(10000):
     value = random.randint(0,100000)
     numbers.append(value)
+    print(value)
 
 
 def insertionSort(numbers):
@@ -22,6 +23,7 @@ def insertionSort(numbers):
 
 insertionSort(numbers)
 print(numbers)
+print("Total time:")
 print((time.time() - start_time))
 
 

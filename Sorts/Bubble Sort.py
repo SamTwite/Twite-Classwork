@@ -3,7 +3,7 @@ import time
 start_time = time.time()
 value = 0
 numbers = []
-for i in range(1000):
+for i in range(100000):
     value = random.randint(0,100000)
     numbers.append(value)
 
